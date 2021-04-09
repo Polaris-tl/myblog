@@ -1,0 +1,71 @@
+.leftBox {
+  position: fixed;
+  margin-left: -7rem;
+  top: 16rem;
+  > div {
+    position: relative;
+    margin-bottom: 0.75rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    background: #fff;
+    &:hover {
+      box-shadow: 0 0 11px 0px rgb(0 0 0 / 22%);
+    }
+    img {
+      width: 65%;
+    }
+    span {
+      position: absolute;
+      right: -23px;
+      background: #c5c5c5;
+      top: -2px;
+      color: #fff;
+      padding: 0 10px;
+      font-size: 12px;
+      border-radius: 50px;
+      line-height: 15px;
+    }
+  }
+}
+
+.article {
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .infoBox {
+    border-bottom: 1px solid #c7c7c7;
+    margin-bottom: 35px;
+  }
+  > div {
+    display: flex;
+    color: #717171;
+    p {
+      margin-right: 14px;
+      span {
+        border: 1px solid #d8d8d8;
+        font-size: 12px;
+        padding: 2px 6px;
+        margin-right: 9px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+.catalog {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  a {
+    color: #000;
+  }
+}

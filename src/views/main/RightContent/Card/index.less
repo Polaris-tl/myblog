@@ -1,0 +1,32 @@
+.card {
+  border-bottom: 1px solid #dadada;
+  padding: 12px 6px;
+  li {
+    list-style: none;
+  }
+  &:hover {
+    > p {
+      color: #2faeff;
+    }
+  }
+  > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #6d6d6d;
+    text-indent: 14px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 8px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 64%;
+      bottom: 0;
+      top: 0;
+      background: #2faeff;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.ul {
+  margin: 0;
+  padding: 0;
+}
+.libox {
+  transition: all 0.3s ease;
+  list-style: none;
+  &:hover {
+    box-shadow: 0 0 14px 0px #c3c3c3;
+  }
+  > div {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #dedede;
+    transition: all ease 0.3s;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      transform: scaleX(0);
+      transition: 0.25s ease-in-out;
+      background-color: #ffb836;
+    }
+    &:hover::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      transform: scaleX(1);
+      transition: 0.25s ease-in-out;
+      background-color: #ffb836;
+    }
+  }
+}
+.title {
+  font-size: 18px;
+  margin-bottom: 21px;
+  font-weight: bold;
+}
+.tags {
+  margin-bottom: 6px;
+}
+.info {
+  display: flex;
+  font-size: 16px;
+  color: #797979;
+  div {
+    margin-right: 27px;
+    span {
+      font-size: 13px;
+      margin-right: 4px;
+      position: relative;
+      top: -1px;
+    }
+  }
+}

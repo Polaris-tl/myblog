@@ -1,0 +1,68 @@
+.ul {
+  padding: 0;
+}
+.li {
+  cursor: pointer;
+  p {
+    margin: 0;
+  }
+  .infoBox {
+    display: flex;
+    padding: 8px 12px;
+    margin: 9px 2px;
+    border-radius: 2px;
+    position: relative;
+    transition: all ease 0.3s;
+    &:hover {
+      box-shadow: 0 0 8px 0 #cacaca;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 0%;
+      background: #ffaf1f;
+      left: 0;
+      transition: all ease 0.3s;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+    &:hover::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 77%;
+      background: #ffaf1f;
+      left: 0;
+      transition: all ease 0.3s;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+    .name {
+      width: 100%;
+      font-size: 16px;
+      color: #333333;
+    }
+    .count {
+      width: 83px;
+      color: #9a9a9a;
+      text-align: right;
+    }
+  }
+  .active {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 77%;
+      background: #ffaf1f;
+      left: 0;
+      transition: all ease 0.3s;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+    }
+  }
+}
